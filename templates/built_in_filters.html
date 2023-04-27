@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>Built_in_filters</h1>
+        
+        {{data}}
+        <h2>LOWER------{{data|lower}}</h2>
+        <h2>UPPER------{{data|upper}}</h2>
+        <h2>CAPFIRST------{{data|capfirst}}</h2>
+        <h2>TITLE------{{data|title}}</h2>
+        <h2>SLICE------{{data|lower}}</h2>
+        <h2>LENGTH------{{data|lower}}</h2>
+        <h2>TRUNCATEWORDS---------{{data|truncatewords:4}}</h2>
+        <h2>TRUNCATECHARS-------{{data|truncatechars:'10'}}</h2>
+        <h2>SLICE------{{data|slice:'10'}}</h2>
+
+        <h2>DATE------{{dt|date:'Y M l'}}</h2>
+        <h2>I have {{c}} cat{{c|pluralize}}</h2>
+        <h2>I have {{c}} mango{{c|pluralize:'es'}}</h2>
+        <h2>This {{c}} marker{{c|pluralize}} {{c|pluralize:'is,are'}} Mine</h2>
+
+    </center>
+</body>
+</html>
